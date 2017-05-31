@@ -1,0 +1,46 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.container{
+	max-width: 1100px;
+	margin: 0 auto;
+}
+.container:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.container>.last{
+	margin: 0;
+}
+.article{
+	width: 33.3%;
+	padding: 1em 0 0 0;
+	margin: 1em 0 0 0;
+	float: left;
+}
+.article>.inner{
+	position: relative;
+	padding: 0 0 1rem 0;
+	margin: .5em;
+	background-color: #fff;
+	-webkit-box-shadow: 1px 3px 10px #2D2D2D;
+	        box-shadow: 1px 3px 10px #2D2D2D;
+}
+.article>.inner>.link{
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+}
+.article>.inner>img{
+	width: 100%;
+}
+.article>.inner>.content{
+	padding: 0 2em;
+	margin: 1em 0 0 0;
+}

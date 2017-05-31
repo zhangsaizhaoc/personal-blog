@@ -1,14 +1,14 @@
 <template>
-	<div>
+	<section id="wrapper">
 		<header id="header">
 			<div class="header-bg">
 				<div class="header-container">
 					<div class="logo"></div>
 					<ul class="nav">
-						<router-link tag="li" to="/article/foo">
+						<router-link tag="li" to="/">
 							<a>首页</a>
 						</router-link>
-						<router-link tag="li" to="/article/bar">
+						<router-link tag="li" to="/article-list">
 							<a>文章</a>
 						</router-link>
 						<router-link tag="li" to="/about">
@@ -25,12 +25,16 @@
 			</div>
 		</header>
 
-		<router-view></router-view>
+		<router-view>
+			<div class="ajs">
+				askldjadkls
+			</div>
+		</router-view>
 
 		<footer id="footer">
 			由Encorehwang制作并发布
 		</footer>
-	</div>
+	</section>
 </template>
 
 <script>

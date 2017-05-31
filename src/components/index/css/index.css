@@ -3,6 +3,7 @@ body,ul,li,h1,h2,h3,h4,h5,h6,ul,li,p,dl,dd,dt,fieldset,legend,table{
 	margin: 0;
 }
 body{
+	min-width: 960px;
 	font-family: "微软雅黑";
 }
 ul{
@@ -12,10 +13,15 @@ a{
 	color: #000;
 	text-decoration: none;
 }
+#wrapper{
+	background-color: #F2F3F5;
+}
 #header{
-	height: 350px;
+	height: 400px;
 	background: url(../img/header-background.jpg) no-repeat;
-	background-size: 100% 120%;
+	border-bottom: 4px solid #13ca8e;
+	-webkit-background-size: 100% 120%;
+	        background-size: 100% 120%;
 }
 .header-bg{
 	padding: 14px 0;
@@ -23,7 +29,7 @@ a{
 	opacity: 0.6;
 }
 .header-container{
-	max-width: 1200px;
+	max-width: 1100px;
 	margin: 0 auto;
 }
 .header-container:after{
@@ -63,9 +69,9 @@ a{
 .introduce>.detail{
 	margin: 14px 0 0 0;
 }
-
 #footer{
 	padding: 16px 0;
+	margin: 120px 0 0 0;
 	color: #fff;
 	background: #030029;
 	font-size: 14px;

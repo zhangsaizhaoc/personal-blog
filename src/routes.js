@@ -1,9 +1,13 @@
 import VueRouter from 'vue-router';
 import Article from './components/article/article.vue';
-import About from './components/about/about.vue'
+import ArticleList from './components/article-list/article-list.vue';
+import About from './components/about/about.vue';
+import path from 'path';
 
 const routes = [
-	{path: '/article/:articleName', name: 'article', component: Article},
+	{path: '/', name: 'index', component: ArticleList},
+	{path: '/article/:article_id', name: 'article', component: Article},
+	{path: '/article-list', name: 'article-list', component: ArticleList},
 	{path: '/about', name:'about', component: About}
 ];
 

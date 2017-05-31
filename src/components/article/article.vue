@@ -1,23 +1,7 @@
 <template>
-	<div>
-		<p id="aa">{{url}}</p>		
-	</div>
+	<section>
+		<div v-text="article_id"></div>
+	</section>
 </template>
 
-<script>
-import '../../lib/js/jquery.min.js';
-export default{
-	data: function(){
-		return {
-			url: this.$route.params.articleName
-		}
-	},
-	methods: {
-	},
-	watch: {
-		"$route": function(to, from){
-			$('#aa').html(this.$route.params.articleName);
-		}
-	}
-}
-</script>
+<script src="./js/article.js"></script>
