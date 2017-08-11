@@ -12,29 +12,38 @@ node_modules​
 src
 ​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​​&nbsp;&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​			  		
 -- 静态资源  
+&nbsp;&nbsp;
 |--components
 ​​&nbsp;&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​
 -- 项目中用到的组件  
-​​​&nbsp;&nbsp;​&nbsp;​&nbsp;&nbsp;
+​​​&nbsp;&nbsp;​&nbsp;​&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 |-- about		
-​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;
+​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;&nbsp;
 -- 关于我页面  
-​​​&nbsp;&nbsp;​&nbsp;​&nbsp;​&nbsp;
+​​​&nbsp;&nbsp;​&nbsp;​&nbsp;​&nbsp;&nbsp;&nbsp;&nbsp;
 |-- article				
-​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​
+​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;&nbsp;​
 -- 文章页面  
-​​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;
+​​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;&nbsp;&nbsp;&nbsp;
 |-- article-list	
-&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;
+&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;&nbsp;
 -- 用于首页的文章列表  
-​​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;
+​​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;&nbsp;&nbsp;&nbsp;
 |-- index
-​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;
+​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;&nbsp;
 -- 首页展示内容  
-​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;
+​&nbsp;​&nbsp;​​
 |--lib
-​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;
--- 用到的第三方框架  
+​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+-- 用到的第三方框架(jQuery等等)  
+&nbsp;​&nbsp;​​
+|--main.js
+&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​​
+-- webpack打包的入口文件  
+&nbsp;​&nbsp;​​
+|--routes.js
+&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​
+-- vue-router路由配置信息  
 .babelrc
 ​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;​&nbsp;
 -- es6编译成es2015用到的配置文件  
@@ -53,4 +62,4 @@ webpack.config.js
 
 所用到的技术栈包括:
 
-基本的HTML/CSS/JS, jQuery, gulp, webpack, vue.js2.0
+基本的HTML/CSS/JS, jQuery, gulp, webpack, vue2.0, vue-router
